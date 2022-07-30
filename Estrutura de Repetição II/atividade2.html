@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>repetição 2</title>
+
+    <center>
+    <img src="https://jd.fortaleza.ce.gov.br/static/img/logo-jdRosa.png" width="400px"><br><br><br>
+    </center>
+    <div>
+        <img src="https://jd.fortaleza.ce.gov.br/static/img/logo-branca.png" width="150px">
+    </div>
+
+</head>
+<body>
+<style>
+        body{
+        background-image: url("https://cdn.create.vista.com/api/media/medium/461254950/stock-photo-orange-gradient-geometric-background-mosaic?token=" );
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    body{
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-size: 50px;
+        color: rgb(255, 255, 255);  
+    }
+
+    #prof{
+        font-family: arial;
+        font-size: 10px;
+        
+    }
+
+</style>
+<div id="prof">
+        curso de programação web com JavaScript<br/>
+       <h3> Prof. André Wendel</h3>
+ </div>
+
+ <div align="center"> 
+ <script>
+    document.write("0")
+
+var n = Number(window.prompt('Quantos termos você quer ? '))    
+    var b = 1
+    var a = 0
+    var c = 0
+    var s = 1
+
+    for(i = 2;i <= n; i++){
+     c = a + b     
+     a = b
+     b = c
+
+     document.write('<br>'+c)
+    }
+     
+
+
+ </script>
+</div>
+</body>
+</html>
