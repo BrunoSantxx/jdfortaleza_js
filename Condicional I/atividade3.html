@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>questão 7</title>
+
+    <center>
+    <img src="https://jd.fortaleza.ce.gov.br/static/img/logo-jdRosa.png" width="400px"><br><br><br>
+    </center>
+    <div>
+		<img src="https://jd.fortaleza.ce.gov.br/static/img/logo-branca.png" width="150px">
+	</div>
+
+</head>
+<body>
+<style>
+        body{
+		background-image: url("https://cdn.create.vista.com/api/media/medium/461254950/stock-photo-orange-gradient-geometric-background-mosaic?token=" );
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+    body{
+    	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+		font-size: 50px;
+		color: rgb(255, 255, 255);	
+    }
+
+    #prof{
+    	font-family: arial;
+    	font-size: 10px;
+    	
+    }
+
+</style>
+<div id="prof">
+        curso de programação web com JavaScript<br/>
+       <h3> Prof. André Wendel</h3>
+ </div> 
+
+ <script>
+ 	
+ 	var n1=prompt("digite um número");
+ 	var n2=prompt("digite outro número");
+ 	var n3=prompt("digite mais um número");
+ 	var Maiorvalor= 0;
+ 	var Menorvalor= 0;
+
+ 	if(Number(n1) > Number(n2) && Number(n1) > Number(n3)){
+			Maiorvalor = Number(n1);
+			alert(Maiorvalor + ' é o maior valor')
+		}
+		else if(Number(n2) > Number(n1) && Number(n2) > Number(n3)){
+			Maiorvalor = Number(n2);
+			alert(Maiorvalor + ' é o maior valor')
+
+		}
+		else if(Number(n3) > Number(n1) && Number(n3) > Number(n2)){
+			Maiorvalor = Number(n3);
+			alert(Maiorvalor + ' é o maior valor')
+		}
+		if(Number(n1) < Number(n2) && Number(n1) < Number(n3)){
+			Menorvalor = Number(n1);
+			alert('E '+ Menorvalor + ' é o menor valor')
+
+		}
+		else if(Number(n2) < Number(n1) && Number(n2) < Number(n3)){
+			Menorvalor = Number(n2);
+			alert('E '+ Menorvalor + ' é o menor valor')
+
+		}
+		else if(Number(n3) < Number(n1) && Number(n3) < Number(n2)){
+			Menorvalor = Number(n3);
+			alert('E '+ Menorvalor + ' é o menor valor')
+		}
+
+				
+ </script>
+
+
+</body>
+</html>
