@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>atividade 4</title>
+
+    <center>
+    <img src="https://jd.fortaleza.ce.gov.br/static/img/logo-jdRosa.png" width="400px"><br><br><br>
+    </center>
+    <div>
+      <img src="https://jd.fortaleza.ce.gov.br/static/img/logo-branca.png" width="150px">
+   </div>
+
+</head>
+<body>
+<style>
+        body{
+      background-image: url("https://cdn.create.vista.com/api/media/medium/461254950/stock-photo-orange-gradient-geometric-background-mosaic?token=" );
+      background-repeat: no-repeat;
+      background-size: cover;
+   }
+
+    body{
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-size: 50px;
+      color: rgb(255, 255, 255); 
+    }
+
+    #prof{
+      font-family: arial;
+      font-size: 10px;
+      
+    }
+
+     #borda{
+     border: 2px solid #F5F5F5;
+     width: 1000px;
+     margin: 0 auto;
+     border-radius: 50px;
+
+    }
+
+</style>
+<div id="prof">
+        curso de programação web com JavaScript<br/>
+       <h3> Prof. André Wendel</h3>
+ </div>
+
+<div id="borda">
+   <script>
+
+        var salario = Number.parseFloat(prompt("Digite o seu salário : "))
+        
+        if(salario>=0 && salario<=280){
+            document.write(`<center>Antes do reajuste: <strong>${salario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write('<center>Percentual de aumento aplicado: <strong>20%</br></strong>')
+            document.write(`<center>Valor do aumento: <strong>${(salario*20/100).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write(`<center>Novo salário: <strong>${((salario*20/100)+salario).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+    }
+        else if(salario>280 && salario<=700){
+            document.write(`<center>Antes do reajuste: <strong>${salario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write('<center>Percentual de aumento aplicado: <strong>15%</br></strong>')
+            document.write(`<center>Valor do aumento: <strong>${(salario*15/100).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write(`<center>Novo salário: <strong>${((salario*15/100)+salario).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+    }
+        else if(salario>700 && salario<1500){
+            document.write(`<center>Antes do reajuste: <strong>${salario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write('<center>Percentual de aumento aplicado: <strong>10%</br></strong>')
+            document.write(`<center>Valor do aumento: <strong>${(salario*10/100).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write(`<center>Novo salário: <strong>${((salario*10/100)+salario).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+    }
+        else if(salario>=1500){
+            document.write(`<center>Antes do reajuste: <strong>${salario.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write('<center>Percentual de aumento aplicado: <strong>5%</br></strong>')
+            document.write(`<center>Valor do aumento: <strong>${(salario*5/100).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+            document.write(`<center>Novo salário: <strong>${((salario*5/100)+salario).toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})}</br></strong></center>`)
+    }
+        else{
+            window.alert("Valor inválido")
+    }
+
+
+    </script>
+</div>
+
+
+</body>
+</html>
